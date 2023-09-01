@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Author from '../static/author1.jpeg'
 import {FiBookmark} from 'react-icons/fi'
 import Posti from '../static/postcard1.webp'
+import Link from 'next/link'
 
 const styles = {
     wrapper:`flex max-w-[46rem] h-[10rem] gap-[1rem]  `,
@@ -20,6 +21,7 @@ const styles = {
 }
 const Postcard = () => {
     return (
+        <Link href={`/post/123`}>
         <div className={styles.wrapper}>
         <div className={styles.postDetails}>
         <div className={styles.authorContainer}>
@@ -55,6 +57,7 @@ const Postcard = () => {
 
         </div>
     </div>
+    </Link>
 
 
 
